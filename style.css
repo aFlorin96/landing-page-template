@@ -78,7 +78,7 @@ main {
 /* *Social media buttons */
 #hideContacts {
    position: fixed;
-   top: 35%;
+   top: 34%;
    left: 0;
    z-index: 1000;
    cursor: pointer;
@@ -311,17 +311,6 @@ main {
    width: 98%;
 }
 
-.hidden {
-   opacity: 0;
-   transform: translateY(30px);
-   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-}
-
-.fade-in {
-   opacity: 1;
-   transform: translateY(0);
-}
-
 /* *Photo gallery */
 
 .photoGallery {
@@ -483,6 +472,27 @@ footer {
 
 .portfolioLink:visited {
    color: rgb(29, 187, 29);
+}
+
+.hidden {
+   opacity: 0;
+   transform: translateY(30px);
+   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.hidden:nth-child(0) {
+   transition-delay: 0.2s;
+}
+.hidden:nth-child(1) {
+   transition-delay: 0.5s;
+}
+.hidden:nth-child(2) {
+   transition-delay: 0.5s;
 }
 
 /* Back to top arrow */
