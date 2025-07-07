@@ -84,3 +84,45 @@ backToTop.addEventListener("click", (e) => {
       behavior: "smooth",
    });
 });
+
+// * Hide contacts
+const hideContacts = document.getElementById("hideContacts");
+hideContacts.addEventListener("click", () => {
+   const socialBtns = document.querySelector(".social-btns");
+   if (socialBtns.style.display === "none" || !socialBtns.style.display) {
+      socialBtns.style.display = "flex";
+      hideContacts.innerHTML = `<i class="bi bi-arrow-left-square-fill"></i>`;
+      behavior: "smooth";
+   } else {
+      socialBtns.style.display = "none";
+      hideContacts.innerHTML = `<i class="bi bi-arrow-right-square-fill"></i>`;
+      behavior: "smooth";
+   }
+});
+
+window.addEventListener("scroll", () => {
+   const socialBtns = document.querySelector(".social-btns");
+   if (window.scrollY > 100) {
+      socialBtns.style.display = "none";
+      hideContacts.style.display = "block";
+      hideContacts.innerHTML = `<i class="bi bi-arrow-right-square-fill"></i>`;
+      behavior: "smooth";
+   } else {
+      socialBtns.style.display = "flex";
+      hideContacts.innerHTML = `<i class="bi bi-arrow-left-square-fill"></i>`;
+      behavior: "smooth";
+   }
+});
+
+// * info section fade-in effect
+const observer = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+         entry.target.classList.add("fade-in");
+      } else {
+         entry.target.classList.remove("fade-in");
+      }
+   });
+});
+
+document.querySelectorAll(".hidden").forEach((el) => observer.observe(el));

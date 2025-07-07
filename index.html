@@ -25,30 +25,26 @@
             <a href="tel:+" class="navCallBtn"><i class="bi bi-telephone-outbound-fill"></i> Prenota ora!</a>
             <div class="hamburger" id="hamburger"><i class="bi bi-list"></i></div>
             <ul class="nav navList" id="navList">
-               <a href="#gallery"
-                  ><li><i class="bi bi-images"></i> Foto</li></a
-               >
-               <a href="#info"
-                  ><li><i class="bi bi-info-circle-fill"></i> Info</li></a
-               >
-               <a href="#contacts"
-                  ><li><i class="bi bi-envelope-fill"></i> Contatti</li></a
-               >
+               <li><i class="bi bi-info-circle-fill"></i><a href="#info"> Info</a></li>
+               <li><i class="bi bi-images"></i><a href="#gallery"> Foto</a></li>
+               <li><i class="bi bi-envelope-fill"></i><a href="#contacts"> Contatti</a></li>
             </ul>
          </nav>
       </header>
       <!-- * Social buttons -->
+      <div id="hideContacts"><i class="bi bi-arrow-left-square-fill"></i></div>
       <div class="social-btns">
          <a href="#" class="facebookBtn"><i class="bi bi-facebook"></i></a>
          <a href="#" class="whatsappBtn"><i class="bi bi-whatsapp"></i></a>
          <a href="#" class="instaBtn"><i class="bi bi-instagram"></i></a>
-         <a href="#" class="phoneBtn"><i class="bi bi-telephone-forward"></i></a>
+         <a href="tel:+" class="phoneBtn"><i class="bi bi-telephone-forward"></i></a>
+         <a href="mailto:" class="emailBtn"><i class="bi bi-envelope-fill"></i></a>
       </div>
       <!-- *Main content -->
       <main>
          <!-- * Hero section -->
          <div class="hero">
-            <div class="hero-content">
+            <div class="hero-content hidden">
                <h1>Benvenuti nella nostra <span>pagina</span></h1>
                <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo iure porro possimus delectus assumenda, eius ratione quos tenetur nostrum veniam consequatur saepe tempore id, eum
@@ -58,7 +54,7 @@
             </div>
          </div>
          <!-- * Description section -->
-         <div class="description">
+         <div class="description hidden">
             <h2>Scopri di più</h2>
             <div class="description-rows">
                <div>
@@ -83,7 +79,7 @@
             </div>
          </div>
          <!-- * Info section -->
-         <div class="info" id="info">
+         <div class="info hidden" id="info">
             <div>
                <h2>Informazioni</h2>
                <p>
@@ -102,7 +98,7 @@
             </div>
          </div>
          <!-- * Gallery section -->
-         <div class="photoGallery" id="gallery">
+         <div class="photoGallery">
             <h2>Galleria Foto</h2>
             <div class="gallery" id="gallery">
                <img src="images/photo1.jpg" alt="Foto 1" />
@@ -125,6 +121,7 @@
          </div>
          <!-- * Packages Sections -->
          <div class="packageOptions">
+            <h2>Esempi offerte</h2>
             <div class="card border-success mb-3">
                <h3 class="card-header bg-transparent border-success">Offerta</h3>
                <div class="card-body">
@@ -164,6 +161,7 @@
                   <a href="#" class="btn btn-success">Prenota ora</a>
                </div>
             </div>
+            <p class="disclaimer">*Le offerte presenti servono solo a scopo informativo e non rapresentano offerte attuali.</p>
          </div>
       </main>
       <!-- * Footer section -->
@@ -180,9 +178,12 @@
                <li>
                   <a href="#"><i class="bi bi-instagram"></i></a>
                </li>
-               <li></li>
+               <li>
+                  <a href="mailto:"><i class="bi bi-envelope-fill"></i></a>
+               </li>
             </ul>
             <p>&copy; <span id="year"></span> Landing Page. Tutti i diritti riservati.</p>
+            <p>Designed By <a href="https://aflorin96.netlify.app/" class="portfolioLink" target="_blank">aFlorin96</a></p>
          </div>
       </footer>
       <a href="#" class="back-to-top" id="backToTop" title="Torna su"> <i class="bi bi-arrow-up"></i> </a>
