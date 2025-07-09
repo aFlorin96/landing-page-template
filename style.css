@@ -596,6 +596,15 @@ footer {
       margin-right: 0;
    }
 
+   .description-rows {
+      flex-direction: column;
+   }
+
+   .presentationsPhotos {
+      display: flex;
+      flex-direction: column;
+   }
+
    .gallery {
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 5px;
@@ -603,6 +612,10 @@ footer {
 
    .gallery img {
       width: 100%;
+   }
+
+   .info {
+      flex-direction: column;
    }
 
    .packageOptions {
